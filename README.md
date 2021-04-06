@@ -30,3 +30,17 @@ crea Test
 ```shel
 php artisan m:test Http\Controllers\Api\PostControllerTest
 ```
+
+Creacion Modelo Factory y migracion
+```shel
+php artisan m:model Post -fm
+```
+
+Creacion Modelo Factory y migracion
+```shel
+php artisan m:con Api\PostController --api --model=Post
+```
+
+Creacion bd para pruebas 
+
+se crea el archivo `database\database.sqlite` y se configura el archivo `config\database.php`
