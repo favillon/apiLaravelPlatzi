@@ -44,3 +44,15 @@ php artisan m:con Api\PostController --api --model=Post
 Creacion bd para pruebas 
 
 se crea el archivo `database\database.sqlite` y se configura el archivo `config\database.php`
+
+
+Pruebas  con contexto 
+```shell
+ vendor\bin\phpunit --testdox
+```
+
+Flitrando test para ejecutar
+
+```shell
+ vendor\bin\phpunit --testdox  --filter testPostUpdate
+```
